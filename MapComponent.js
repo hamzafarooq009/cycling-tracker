@@ -4,7 +4,7 @@ import polyline from '@mapbox/polyline';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 // Make sure to replace this with your actual Mapbox access token
-mapboxgl.accessToken = 'ACCESS-TOKEN';
+mapboxgl.accessToken = 'ACCESS_TOKEN_HERE';
 
 const MapComponent = ({ route }) => {
   const mapContainerRef = useRef(null);
@@ -50,7 +50,7 @@ const MapComponent = ({ route }) => {
           },
           paint: {
             'line-color': '#ff0000',
-            'line-width': 12
+            'line-width': 6
           }
         });
 
