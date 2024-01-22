@@ -6,7 +6,8 @@
     "react-dom": "^18.0.0",
     "react-map-gl": "^7.0.10",
     "react-scripts": "^5.0.0",
-    "@mapbox/polyline": "^1.1.1"
+    "@mapbox/polyline": "^1.1.1",
+    "bootstrap": "^4.6.0"
   },
   "main": "src/index.js",
   "scripts": {
