@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: row; /* Align children in a row */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  margin: 0;
+  padding: 0;
+  align-items: stretch; /* Stretch children to fill the container height */
+}
+
+.sidebar {
+  width: 25vw; /* Sidebar takes up 25% of the viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Align content to the top */
+  padding: 1em; /* Padding inside the sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow to separate from the map */
+  z-index: 1; /* Ensure the sidebar stacks on top when widths overlap */
+}
+
+.map-container {
+  background-size: cover;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100vw; /* Sidebar takes full width on smaller screens */
+    order: 2; /* Map appears first, then the sidebar */
+  }
+  .map-container {
+    width: 100vw;
+    order: 1; /* Map appears first, then the sidebar */
+    height: 50vh; /* Adjust the map height on smaller screens */
+  }
+}
