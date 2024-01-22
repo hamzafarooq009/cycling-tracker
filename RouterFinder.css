@@ -1,0 +1,162 @@
+.route-finder {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Update for input and button elements */
+.input, .button {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  margin: 10px 0; /* Add some margin to the top and bottom */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* Style for input fields with icons */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-left: 2.5em; /* Make space for the icon inside the input field */
+}
+
+.input-with-icon .icon {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.button {
+  background-color: #CCCFF7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.find-route {
+    background-color: #CCCFF7;
+}
+
+.find-route:hover {
+    background-color: #0056b3;
+}
+
+.get-tips {
+    background-color: #28a745;
+}
+
+.get-tips:hover {
+    background-color: #1e7e34;
+}
+
+.route-details, .adventure-tips {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.chat-container {
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.conversation-view {
+    height: 300px; /* Fixed height with scrolling */
+    overflow-y: auto;
+    padding: 5px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.message {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.message.user {
+  background-color: #dcf8c6;
+}
+
+.message-input {
+    display: flex;
+}
+
+.message.user::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: #dcf8c6;
+  border-right: 0;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.message.chatbot {
+  background-color: #f0f0f0;
+}
+
+.message.chatbot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: #f0f0f0;
+  border-left: 0;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.message-input input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.message-input button:hover {
+    background-color: #0056b3;
+}
